@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import rhitaHyabiImage from '@/assets/rhita-hyabi.jpg';
 import yasmineKebbajImage from '@/assets/yasmine-kebbaj.jpg';
 import ghitaLamraniImage from '@/assets/ghita-lamrani.jpg';
+import sanaaJwahriImage from '@/assets/sanaa-jwahri.jpg';
 
 const teamMembers = [
   {
@@ -53,6 +54,21 @@ const teamMembers = [
     experienceFr: '+5 ans',
     image: ghitaLamraniImage,
   },
+  {
+    name: 'JAWHARI Sanaa',
+    nameAr: 'سناء جواهري ',
+    nameFr: 'JAWHARI Sanaa',
+    role: 'Orthophoniste ',
+    roleAr: 'مختصة العلاج النفسي الحركي',
+    roleFr: 'Orthophoniste ',
+    specialties: ['Thérapie et accompagnement','prise en charge des troubles du langage oral et écrit'],
+    specialtiesAr: ['العلاج والمرافقة','التعامل مع اضطرابات اللغة الشفهية والمكتوبة'],
+    specialtiesFr: ['Thérapie et accompagnement','prise en charge des troubles du langage oral et écrit'],
+    experience: '+5 ans',
+    experienceAr: '+5 سنوات خبرة',
+    experienceFr: '+5 ans',
+    image: sanaaJwahriImage,
+  },
 ];
 
 export const Team: React.FC = () => {
@@ -73,7 +89,7 @@ export const Team: React.FC = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <Card 
               key={index}
@@ -83,7 +99,7 @@ export const Team: React.FC = () => {
                 <img
                   src={member.image}
                   alt={language === 'ar' ? member.nameAr : language === 'fr' ? member.nameFr : member.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full  group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               
