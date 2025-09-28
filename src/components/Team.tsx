@@ -59,7 +59,7 @@ const teamMembers = [
     nameAr: 'سناء جواهري ',
     nameFr: 'JAWHARI Sanaa',
     role: 'Orthophoniste ',
-    roleAr: 'مختصة العلاج النفسي الحركي',
+    roleAr: 'مختصة تقويم النطق',
     roleFr: 'Orthophoniste ',
     specialties: ['Thérapie et accompagnement','prise en charge des troubles du langage oral et écrit'],
     specialtiesAr: ['العلاج والمرافقة','التعامل مع اضطرابات اللغة الشفهية والمكتوبة'],
